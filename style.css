@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+/* Dhruv Aanand*/
+#event {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  span {
+    align-items: center;
+    text-align: center;
+  }
+  
+  .arr1{
+      position: absolute;
+      top: 40%;
+      font-size: 2rem;
+      left: 2%;
+      cursor: pointer;
+  }
+  
+  .arr2{
+      position: absolute;
+      top: 104%;
+      font-size: 2rem;
+      left: 2%;
+      cursor: pointer;
+  }
+  
+  .arr3{
+      position: absolute;
+      top: 168%;
+      font-size: 2rem;
+      left: 2%;
+      cursor: pointer;
+  }
+  
+  .arrl1{
+      position: absolute;
+      top: 40%;
+      font-size: 2rem;
+      right: 2%;
+      cursor: pointer;
+  }
+  
+  .arrl2{
+      position: absolute;
+      top: 104%;
+      font-size: 2rem;
+      right: 2%;
+      cursor: pointer;
+  }
+  
+  .arrl3{
+      position: absolute;
+      top: 168%;
+      font-size: 2rem;
+      right: 2%;
+      cursor: pointer;
+  }
+  
+  .zero {
+    margin: 0%;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .img {
+    height: 60%;
+    width: 80%;
+  }
+  
+  .hackathon {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  
+  .webinars {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  
+  .quizzes {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  
+  .event-hackathon {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 18rem;
+    width: 18%;
+    justify-content: space-evenly;
+    box-shadow: #20d227 6px 6px 4px 0px;
+    background: linear-gradient(45deg, #1ee211, transparent, #4fad03);
+  }
+  
+  .event-webinars {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 18rem;
+    width: 18%;
+    justify-content: space-evenly;
+    box-shadow: #20d227 6px 6px 4px 0px;
+    background: linear-gradient(45deg, #393535, transparent, #abff00);
+  }
+  
+  .event-quizzes {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 18rem;
+    width: 18%;
+    justify-content: space-evenly;
+    box-shadow: #20d227 6px 6px 4px 0px;
+    background: linear-gradient(45deg, #1ee211, transparent, #4fad03);
+  }
+  
+  hr {
+    width: 100%;
+    font-size: 2rem;
+    background-color: #545151;
+    box-shadow: 0px 0px 4px;
+  }
+  
+  .btn {
+    background-color: #9e9e9eb0;
+    height: 2rem;
+  }
+  
+  .btn:hover {
+    background-color: yellow;
+    cursor: pointer;
+  }
+  /* Event section ends here*/
+  
+  /*Yash Jaiswal*/
+  @import url();
+
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+#UI{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #cecacac4;
+  flex-wrap: wrap;
+}
+
+.container{
+  position: relative;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 350px;
+}
+
+.container .card{
+  position: relative;
+  width: 300px;
+  height: 350px;
+  background: #ecebeb;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .card:before{
+  content: '';
+  position: absolute;
+  top: 10;
+  left: 10;
+  width: 100%;
+  height: 100%;
+  background: #4020b4;
+  clip-path: circle(120px at 50% 0%);
+  transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before{
+  clip-path: circle(210px at 50% -20%);
+}
+
+.container .card .imgBx{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45%;
+  height: 220px;
+  transition: 0.5s;
+}
+
+.container .card:hover .imgBx{
+  top: 0%;
+  transform: translateY(0%);
+    
+}
+
+.container .card .imgBx img{
+  position: relative;
+  top: 30%;
+  left: 100%;
+  transform: translate(-50%, -50%) rotate(0deg);
+  width: 200%;
+  height: 100%;
+  align-self: center;
+  padding-top: 62.5%;
+}
+
+.container .card .contentBx{
+  position: absolute;
+  bottom: -10px;
+  width: 100%;
+  height: 80px;
+  text-align: center;
+  transition: 1s;
+  z-index: 10;
+}
+
+.container .card:hover .contentBx{
+  height: 210px;
+}
+
+.container .card .contentBx h2{
+  position: relative;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: rgb(26, 25, 25);
+  margin: 10px;
+  background-color: rgb(240, 202, 134);
+  border-radius: 1000px;
+
+}
+
+.container .card .contentBx .myself, .container .card .contentBx .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  opacity: 0%;
+  visibility: hidden;
+  padding-top: 10;
+  padding-bottom: 0;
+}
+
+.container .card:hover .contentBx .myself{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.container .card:hover .contentBx .links{
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.container .card .contentBx .myself h3, .container .card .contentBx .links h3{
+  color: rgb(44, 42, 42);
+  font-weight: 300;
+  font-size: 8.5px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container .card .contentBx .myself span{
+  width: 26px;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.container .card .contentBx .myself span:hover{
+  background: #4020b4;
+}
+
+.container .card .contentBx .links span{
+  width: 40px;
+  height: 40px;
+  background: rgb(110, 110, 106);
+  border-radius: 50%;
+  margin: 5px 5px;
+  cursor: pointer;
+}
+
+.container .card .contentBx a{
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+  margin-top: 0;
+}
+/* Members section ends here*/
+/*Sameeksha*/
+/* 
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+}
+section
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #112d42;
+}
+section::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #03a9f4;
+}
+section .container
+{
+    position: relative;
+    min-width: 1100px;
+    min-height: 550px;
+    display: flex;
+    z-index: 1000;
+}
+section .container .contactinfo
+{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100%-80px);
+    background: #0f3959;
+    z-index: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+section .container .contactinfo h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .container .contactinfo .info
+{
+    position: relative;
+    margin: 20px 0;
+}
+section .container .contactinfo .info li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+section .container .contactinfo .info li span:nth-child(1)
+{
+    width: 30px;
+    min-width: 30px;
+}
+section .container .contactinfo .info li span:nth-child(1) img
+{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .container .contactinfo .info li span:nth-child(2)
+{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+
+}
+section .container .contactinfo .info li :hover span:nth-child(1) img,
+section .container .contactinfo .info li:hover span:nth-child(2) 
+{opacity: 1;
+}
+section .container .contactinfo .sci
+{
+    position: relative;
+    display: flex;
+}
+section .container .contactinfo .sci li
+{
+    list-style: none;
+    margin-right: 15px;
+}
+section .container .contactinfo .sci li a{
+    text-decoration: none;
+
+}
+section .container .contactinfo .sci li a img
+{
+    width: 30px;
+    filter: invert(1);
+    opacity: 0.5;
+}
+section .container .contactinfo .sci li:hover a img
+{
+    opacity: 1;
+}
+section .container .contactForm
+{
+    position: absolute;
+    padding: 70px 50px;
+    background: #fff;
+    margin-left: 150px;
+    padding-left: 250px;
+    width: calc(100%-150px);
+    height: 100%;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+section .container .contactForm h2{
+    color: #0f3959;
+    font-size: 24px;
+    font-weight: 500;
+}
+section .container .contactForm .formBox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+section .container .contactForm .formBox .inputBox
+{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+section .container .contactForm .formBox .inputBox .w50
+{
+    width: 47%;
+}
+section .container .contactForm .formBox .inputBox .w100
+{
+    width: 100%;
+}
+section .container .contactForm .formBox .inputBox input,
+section .container .contactForm .formBox .inputBox textarea
+{
+    width: 100% !important;
+    padding: 5px 0;
+    resize: none;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    border: none;
+    border-bottom: 1px solid #777;
+    outline: none;
+}
+section .container .contactForm .formBox .inputBox textarea
+{
+    min-height: 120px;
+}
+section .container .contactForm .formBox .inputBox span
+{
+position:absolute;
+left: 0;
+font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.3s;
+    pointer-events: none;
+}
+section .container .contactForm .formBox .inputBox input:focus ~ span,
+section .container .contactForm .formBox .inputBox textarea :focus ~span,
+section .container .contactForm .formBox .inputBox input:valid ~ span,
+section .container .contactForm .formBox .inputBox textarea :valid ~span
+{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #ff568c;
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]
+{
+    position: relative;
+    cursor: pointer;
+    background: #0f3959;
+    color: #fff;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
+
+
+}
+section .container .contactForm .formBox .inputBox input[type="submit"]:hover
+{
+    background: #ff568c;
+}*/
+/*Contact us ends here*/
+/* Prashu*/
+.block{
+    background-color: green;
+    height: 250px;
+    color: white;
+    padding: 15px;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+}
+h2{
+    text-align: center;
+}
+#pic{
+    margin: 10px;
+}
+p{
+    font-style: oblique;
+}
+#im{
+border-radius: 50%;
+}
+/*Footer ends here*/
