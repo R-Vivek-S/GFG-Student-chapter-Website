@@ -1,1 +1,1 @@
-# GFG-Student-chapter-Website
+# GFGIMS-Student-chapter-Website
