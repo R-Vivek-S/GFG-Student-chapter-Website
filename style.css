@@ -1,148 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
 /* Dhruv Aanand*/
-#event {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  span {
-    align-items: center;
-    text-align: center;
-  }
-  
-  .arr1{
-      position: absolute;
-      top: 40%;
-      font-size: 2rem;
-      left: 2%;
-      cursor: pointer;
-  }
-  
-  .arr2{
-      position: absolute;
-      top: 104%;
-      font-size: 2rem;
-      left: 2%;
-      cursor: pointer;
-  }
-  
-  .arr3{
-      position: absolute;
-      top: 168%;
-      font-size: 2rem;
-      left: 2%;
-      cursor: pointer;
-  }
-  
-  .arrl1{
-      position: absolute;
-      top: 40%;
-      font-size: 2rem;
-      right: 2%;
-      cursor: pointer;
-  }
-  
-  .arrl2{
-      position: absolute;
-      top: 104%;
-      font-size: 2rem;
-      right: 2%;
-      cursor: pointer;
-  }
-  
-  .arrl3{
-      position: absolute;
-      top: 168%;
-      font-size: 2rem;
-      right: 2%;
-      cursor: pointer;
-  }
-  
-  .zero {
-    margin: 0%;
-  }
-  
-  img {
-    height: 100%;
-    width: 100%;
-  }
-  
-  .img {
-    height: 60%;
-    width: 80%;
-  }
-  
-  .hackathon {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-  }
-  
-  .webinars {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-  }
-  
-  .quizzes {
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-  }
-  
-  .event-hackathon {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 18rem;
-    width: 18%;
-    justify-content: space-evenly;
-    box-shadow: #20d227 6px 6px 4px 0px;
-    background: linear-gradient(45deg, #1ee211, transparent, #4fad03);
-  }
-  
-  .event-webinars {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 18rem;
-    width: 18%;
-    justify-content: space-evenly;
-    box-shadow: #20d227 6px 6px 4px 0px;
-    background: linear-gradient(45deg, #393535, transparent, #abff00);
-  }
-  
-  .event-quizzes {
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 18rem;
-    width: 18%;
-    justify-content: space-evenly;
-    box-shadow: #20d227 6px 6px 4px 0px;
-    background: linear-gradient(45deg, #1ee211, transparent, #4fad03);
-  }
-  
-  hr {
-    width: 100%;
-    font-size: 2rem;
-    background-color: #545151;
-    box-shadow: 0px 0px 4px;
-  }
-  
-  .btn {
-    background-color: #9e9e9eb0;
-    height: 2rem;
-  }
-  
-  .btn:hover {
-    background-color: yellow;
-    cursor: pointer;
-  }
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  );
+  justify-content: space-around;
+}
+
+/* Background Circle*/
+
+.circles {
+  position: absolute;
+  height: 270px;
+  width: 450px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.circle-1 {
+  position: absolute;
+  top: -50px;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+  left: 10px;
+  height: 160px;
+  width: 160px;
+}
+.circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+  right: 40px;
+  top: 80px;
+  opacity: 0.8;
+  height: 160px;
+  width: 160px;
+}
+
+/* Card */
+
+.card {
+  width: 380px;
+  height: 230px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: relative;
+}
   /* Event section ends here*/
   
   /*Yash Jaiswal*/
