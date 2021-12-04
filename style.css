@@ -240,8 +240,8 @@ input[type="checkbox"]{
     border-radius: 50%;
     background: radial-gradient(#006db3, #29b6f6);
     left: 10px;
-    height: 160px;
-    width: 160px;
+    height: 10rem;
+    width: 10rem;
   }
   .circle-2 {
     position: absolute;
