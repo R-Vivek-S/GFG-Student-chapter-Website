@@ -195,6 +195,7 @@ input[type="checkbox"]{
 
 #event {
   display: flex;
+
   overflow: hidden;
   flex-wrap: wrap;
 }
@@ -299,6 +300,102 @@ h2{
   overflow: hidden;
   padding-top: 5px;
   margin-left: 5px
+=======
+  flex-direction: column;
+  background-image: linear-gradient(
+    109.6deg,
+    rgba(62, 161, 219, 1) 11.2%,
+    rgba(93, 52, 236, 1) 100.2%
+  );
+}
+
+
+
+.container1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+/* Background Circle*/
+
+.circles {
+  position: absolute;
+  height: 270px;
+  width: 450px;
+  top: 130%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.circles-d {
+  position: absolute;
+  height: 270px;
+  width: 450px;
+  top: 125%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+}
+
+.circle-1 {
+  position: absolute;
+  top: -40%;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+  left: 10px;
+  height: 160px;
+  width: 160px;
+}
+.circle-2 {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+  right: 40px;
+  top: 80px;
+  opacity: 0.8;
+  height: 160px;
+  width: 160px;
+}
+
+.circle-3 {
+  position: absolute;
+  top: -40%;
+  border-radius: 50%;
+  background: linear-gradient(
+45deg, #2d46d1,#473bf5, transparent);
+  left: 148px;
+  height: 20rem;
+  width: 20rem;
+  z-index: -1;
+}
+.circle-4 {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(#006db3, #29b6f6);
+  right: 34%;
+  top: 80px;
+  opacity: 0.8;
+  height: 20rem;
+  width: 20rem;
+}
+
+/* Card */
+
+.card1 {
+  width: 230px;
+  height: 230px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  z-index: 1;
+  overflow: hidden;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  position: relative;
+  margin-left: 20px
+
 }
 /* Event section ends here*/  
   /*Yash Jaiswal*/
